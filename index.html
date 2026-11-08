@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMconcursos - Simulado IBGE Agro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="quiz-card">
+        <!-- TELA DE SELEÇÃO COM O SUMÁRIO COMPLETO -->
+        <div id="menu-container">
+            <h2 class="menu-titulo">Simulado IBGE Agro 2027</h2>
+            <p class="menu-sub">Escolha o tópico do sumário que deseja treinar:</p>
+            <div class="lista-blocos">
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(1)">
+                    <strong>Tópico 1</strong><br><span>O Instituto Brasileiro de Geografia e Estatística (IBGE)</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(2)">
+                    <strong>Tópico 2</strong><br><span>O Censo Agropecuário, Florestal e Aquícola</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(3)">
+                    <strong>Tópico 3</strong><br><span>O 12º Censo Agropecuário, Florestal e Aquícola</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(4)">
+                    <strong>Tópico 4</strong><br><span>Estrutura Organizacional Censitária</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(5)">
+                    <strong>Tópico 5</strong><br><span>Instrumentos de Trabalho</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(6)">
+                    <strong>Tópico 6</strong><br><span>Orientações de Navegação para o Trabalho em Campo</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(7)">
+                    <strong>Tópico 7</strong><br><span>Divisão Político-Administrativa do Brasil</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(8)">
+                    <strong>Tópico 8</strong><br><span>Estruturas Territoriais</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(9)">
+                    <strong>Tópico 9</strong><br><span>Estruturas Territoriais de Povos e Comunidades Tradicionais (PCTs)</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(10)">
+                    <strong>Tópico 10</strong><br><span>Endereço (CNEFE e componentes)</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(11)">
+                    <strong>Tópico 11</strong><br><span>Coordenadas Geográficas</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(12)">
+                    <strong>Tópico 12</strong><br><span>Estabelecimento Agropecuário (Conceitos, Unidades Recenseáveis/Não Recenseáveis)</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(13)">
+                    <strong>Tópico 13</strong><br><span>Produtores sem Área</span>
+                </button>
+                <button type="button" class="bloco-btn" onclick="iniciarSimulado(14)">
+                    <strong>Tópico 14</strong><br><span>Situações Especiais</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- TELA DO QUIZ -->
+        <div id="quiz-conteudo" style="display: none;">
+            <div id="progresso" class="progresso">Carregando...</div>
+            <div id="questao-container" class="questao-titulo">A carregar questão...</div>
+            <div id="opcoes-container" class="opcoes-container"></div>
+            <div id="feedback"></div>
+            
+            <div class="controles-inferiores">
+                <button id="sair-btn" class="sair-btn" onclick="sairSimulado()">Sair</button>
+                <div class="botoes-direita">
+                    <button id="voltar-btn" class="voltar-btn" onclick="voltarQuestao()" style="display: none;">← Voltar</button>
+                    <button id="proximo-btn" class="proximo-btn" onclick="proximaQuestao()" style="display: none;">Próxima →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="questoes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
