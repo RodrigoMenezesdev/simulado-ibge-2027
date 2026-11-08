@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMconcursos - Simulado IBGE Agro</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <div class="quiz-card">
         <!-- TELA DE SELEÇÃO COM O SUMÁRIO COMPLETO -->
@@ -38,7 +40,8 @@
                     <strong>Tópico 8</strong><br><span>Estruturas Territoriais</span>
                 </button>
                 <button type="button" class="bloco-btn" onclick="iniciarSimulado(9)">
-                    <strong>Tópico 9</strong><br><span>Estruturas Territoriais de Povos e Comunidades Tradicionais (PCTs)</span>
+                    <strong>Tópico 9</strong><br><span>Estruturas Territoriais de Povos e Comunidades Tradicionais
+                        (PCTs)</span>
                 </button>
                 <button type="button" class="bloco-btn" onclick="iniciarSimulado(10)">
                     <strong>Tópico 10</strong><br><span>Endereço (CNEFE e componentes)</span>
@@ -47,7 +50,8 @@
                     <strong>Tópico 11</strong><br><span>Coordenadas Geográficas</span>
                 </button>
                 <button type="button" class="bloco-btn" onclick="iniciarSimulado(12)">
-                    <strong>Tópico 12</strong><br><span>Estabelecimento Agropecuário (Conceitos, Unidades Recenseáveis/Não Recenseáveis)</span>
+                    <strong>Tópico 12</strong><br><span>Estabelecimento Agropecuário (Conceitos, Unidades
+                        Recenseáveis/Não Recenseáveis)</span>
                 </button>
                 <button type="button" class="bloco-btn" onclick="iniciarSimulado(13)">
                     <strong>Tópico 13</strong><br><span>Produtores sem Área</span>
@@ -55,6 +59,13 @@
                 <button type="button" class="bloco-btn" onclick="iniciarSimulado(14)">
                     <strong>Tópico 14</strong><br><span>Situações Especiais</span>
                 </button>
+
+                <!-- BOTÃO DA APOSTILA OFICIAL EM PDF -->
+                <a href="apostila-ibge-agro.pdf" target="_blank" class="bloco-btn"
+                    style="text-decoration: none; border-color: #28a745; background-color: #f8f9fa; display: flex; flex-direction: column;">
+                    <strong style="color: #28a745;">📄 Baixar Apostila Oficial (PDF)</strong>
+                    <span>Conhecimentos Básicos - 12º Censo Agro</span>
+                </a>
             </div>
         </div>
 
@@ -64,12 +75,14 @@
             <div id="questao-container" class="questao-titulo">A carregar questão...</div>
             <div id="opcoes-container" class="opcoes-container"></div>
             <div id="feedback"></div>
-            
+
             <div class="controles-inferiores">
                 <button id="sair-btn" class="sair-btn" onclick="sairSimulado()">Sair</button>
                 <div class="botoes-direita">
-                    <button id="voltar-btn" class="voltar-btn" onclick="voltarQuestao()" style="display: none;">← Voltar</button>
-                    <button id="proximo-btn" class="proximo-btn" onclick="proximaQuestao()" style="display: none;">Próxima →</button>
+                    <button id="voltar-btn" class="voltar-btn" onclick="voltarQuestao()" style="display: none;">←
+                        Voltar</button>
+                    <button id="proximo-btn" class="proximo-btn" onclick="proximaQuestao()"
+                        style="display: none;">Próxima →</button>
                 </div>
             </div>
         </div>
